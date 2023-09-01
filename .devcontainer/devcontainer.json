@@ -14,6 +14,7 @@
 		"--security-opt=apparmor:unconfined",
 		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
 		"--volume=/mnt/wslg:/mnt/wslg",
+		"--volume=${env:HOME}/.ssh:/home/ros/.host.ssh",
 		"--ipc=host"
 		// uncomment to use intel iGPU
 		// "--device=/dev/dri"
@@ -29,19 +30,27 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"althack.ament-task-provider",
 				"betwo.b2-catkin-tools",
 				"DotJoshJohnson.xml",
 				"ms-azuretools.vscode-docker",
-				"ms-iot.vscode-ros",
 				"ms-python.python",
+				"ms-iot.vscode-ros",
 				"ms-vscode.cpptools",
+				"ms-azuretools.vscode-docker",
+				"ms-vscode.makefile-tools",
 				"redhat.vscode-yaml",
 				"smilerobotics.urdf",
 				"streetsidesoftware.code-spell-checker",
 				"twxs.cmake",
 				"yzhang.markdown-all-in-one",
-				"zachflower.uncrustify"
+				"zachflower.uncrustify",
+				"eamodio.gitlens",
+				"ms-python.black-formatter",
+				"deitry.colcon-helper",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.cmake-tools",
+				"njpwerner.autodocstring",
+				"github.vscode-github-actions"
 			]
 		}
 	}

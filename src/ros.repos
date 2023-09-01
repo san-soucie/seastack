@@ -1,0 +1,14 @@
+# List of repositories to use within your workspace
+# See https://github.com/dirk-thomas/vcstool
+############ 
+# Example:
+############
+repositories:
+  sgdrfros:
+    type: git
+    url: https://github.com/san-soucie/sgdrfros1.git
+    version: main
+  fake_ifcb_ros:
+    type: git
+    url: https://github.com/san-soucie/fake_ifcb_ros.git
+    version: main
