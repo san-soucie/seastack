@@ -1,14 +1,34 @@
 # List of repositories to use within your workspace
 # See https://github.com/dirk-thomas/vcstool
-############ 
+############
 # Example:
 ############
 repositories:
-  sgdrfros:
+  sgdrfros1:
     type: git
-    url: https://github.com/san-soucie/sgdrfros1.git
+    url: git@github.com:san-soucie/sgdrfros1.git
     version: main
-  fake_ifcb_ros:
+  ifcb_triton_glue_ros:
     type: git
-    url: https://github.com/san-soucie/fake_ifcb_ros.git
+    url: git@github.com:san-soucie/ifcb_triton_glue_ros.git
+    version: main
+  PhytO-ARM:
+    type: git
+    url: git@github.com:WHOIGit/PhytO-ARM.git
+    version: nathan.figueroa/classify-roi-via-triton
+  ds_base:
+    type: git
+    url: https://bitbucket.org/whoidsl/ds_base.git
+    version: master
+  ds_msgs:
+    type: git
+    url: https://bitbucket.org/whoidsl/ds_msgs.git
+    version: master
+  ds_sensors:
+    type: git
+    url: https://bitbucket.org/whoidsl/ds_sensors.git
+    version: master
+  ros-rtsp-camera:
+    type: git
+    url: git@github.com:WHOIGit/ros-rtsp-camera.git
     version: main

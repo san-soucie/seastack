@@ -5,7 +5,7 @@ cat <<EOF >> /home/ros/.ssh/config
 Host *
   StrictHostKeyChecking no
 EOF
-vcs import < src/ros.repos src
+vcs import --input src/ros.repos src
 sudo apt-get update
 rosdep update
 rosdep install --from-paths src --ignore-src -y
