@@ -9,13 +9,16 @@
         "*.xacro": "xml"
     },
     "python.analysis.extraPaths": [
-        "/opt/ros/noetic/lib/python3/site-packages/",
-        "/workspaces/ros_ws/devel/lib/python3/dist-packages/"
+        "/workspaces/seastack/devel/lib/python3/dist-packages",
+        "./devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "./install/lib/python3/dist-packages"
     ],
     // Autocomplete from ros python packages
     "python.autoComplete.extraPaths": [
-        "/opt/ros/noetic/lib/python3/site-packages/",
-        "/workspaces/ros_ws/devel/lib/python3/dist-packages/"
+        "/workspaces/seastack/devel/lib/python3/dist-packages",
+        "./devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
     ],
     // Environment file lets vscode find python files within workspace
     "python.envFile": "${workspaceFolder}/.env",
@@ -38,7 +41,6 @@
         "**/log": true
     },
     "cSpell.words": [
-        "RTPS",
         "athackst",
         "autopep",
         "cmake",
@@ -47,6 +49,7 @@
         "DCMAKE",
         "deque",
         "devcontainer",
+        "ifcb",
         "ints",
         "noqa",
         "pytest",
@@ -77,5 +80,6 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "python.formatting.provider": "none",
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "python.terminal.activateEnvironment": true
 }

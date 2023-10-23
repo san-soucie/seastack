@@ -5,3 +5,5 @@ log/*
 site/*
 src/*
 !src/ros.repos
+.catkin_tools/
+logs/*
